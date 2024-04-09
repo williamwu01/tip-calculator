@@ -1,0 +1,15 @@
+{
+	"devDependencies": {
+		"tailwindcss": "^3.4.3"
+	},
+	"name": "tip-calculator-app-main",
+	"description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+	"version": "1.0.0",
+	"main": "script.js",
+	"scripts": {
+		"build": "npx tailwindcss -i ./style.css -o ./src/output.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

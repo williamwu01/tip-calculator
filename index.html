@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link href="src/output.css" rel="stylesheet" type="text/css">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<!-- this will be running tailwind css  -->
+	<script src="script.js"></script>
+
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<h1 class="text-3xl font-bold underline text-center text-blue-500">
+    Hello world!
+  </h1>
+  <h2>Bill</h2>
+	<input id="billTotal" type="number" placeholder="&#36;&nbsp;0">
+
+<div>
+	<h2>Select Tip %</h2>
+  <button type="button" value="5" class="btn-tips">5%</button>
+	<button type="button" value="10" class="btn-tips">10%</button>
+	<button type="button" value="15" class="btn-tips">15%</button>
+	<button type="button" value="25" class="btn-tips">25%</button>
+	<button type="button" value="50" class="btn-tips">50%</button>
+	<input id="customAmount" type="text" placeholder="Custom">
+</div>
+  
+<div>
+	<div>
+		<h2>Number of People</h2>
+		<div id="alert"></div>
+	</div>
+	<input id="numOfPpl" type="number" pattern="[0-9]" placeholder="0">
+</div>
+
+<div>
+  <h2>Tip Amount</h2>
+  <span>/ person</span>
+	<input id="totalTipAmount" readonly placeholder="$0.00" type="text">
+</div>
+
+<div>
+  <h2>Total</h2>
+  <span>/ person</span>
+	<input id="totalAmount" readonly placeholder="$0.00" type="text" >
+</div>
+
+  <button id="reset">Reset</button>
+
+	<footer>
+		<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.williamwu.tech">William Wu</a>.
+  </div>
+	</footer>
+  
+</body>
+</html>
