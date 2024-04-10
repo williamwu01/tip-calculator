@@ -19,44 +19,54 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-	<h1 class="text-3xl font-bold underline text-center text-blue-500">
-    Hello world!
-  </h1>
-  <h2>Bill</h2>
-	<input id="billTotal" type="number" placeholder="&#36;&nbsp;0">
-
-<div>
-	<h2>Select Tip %</h2>
-  <button type="button" value="5" class="btn-tips">5%</button>
-	<button type="button" value="10" class="btn-tips">10%</button>
-	<button type="button" value="15" class="btn-tips">15%</button>
-	<button type="button" value="25" class="btn-tips">25%</button>
-	<button type="button" value="50" class="btn-tips">50%</button>
-	<input id="customAmount" type="text" placeholder="Custom">
-</div>
-  
-<div>
-	<div>
-		<h2>Number of People</h2>
-		<div id="alert"></div>
+<h1 class="text-3xl font-bold underline text-center text-blue-500">
+	SPLITTER
+</h1>
+<body class=" bg-blue-300">
+	<div class="m-52 p-20 bg-white rounded-2xl">
+	
+	<div class="flex">		
+		<section class="w-1/2 mr-4">
+			<h2 class="text-2xl">Bill</h2>
+			<input class="bg-gray-300 p-2 inline" id="billTotal" type="number" placeholder="&#36;&nbsp;0">
+		
+			<div>
+				<h2 class="text-2xl">Select Tip %</h2>
+				<button type="button" value="5" class="btn-tips border border-gray-400 w-20 bg-green-800 text-white p-2 rounded">5%</button>
+				<button type="button" value="10" class="btn-tips border border-gray-400 w-20 bg-green-800 text-white p-2 rounded">10%</button>
+				<button type="button" value="15" class="btn-tips border border-gray-400 w-20 bg-green-800 text-white p-2 rounded">15%</button>
+				<button type="button" value="25" class="btn-tips border border-gray-400 w-20 bg-green-800 text-white p-2 rounded">25%</button>
+				<button type="button" value="50" class="btn-tips border border-gray-400 w-20 bg-green-800 text-white p-2 rounded">50%</button>
+				<input id="customAmount" type="text" placeholder="Custom" class="bg-gray-300 w-20 p-2 inline">
+			</div>
+			
+			<div>
+				<div>
+					<h2 class="text-2xl">Number of People</h2>
+					<div class="text-red-400" id="alert"></div>
+				</div>
+				<input class="bg-gray-300 p-2" id="numOfPpl" type="number" pattern="[0-9]" placeholder="0">
+			</div>
+		</section>
+		
+		<section class="w-1/2 bg-blue-400 p-4 rounded-2xl">		
+			<div>
+				<h2 class="text-2xl">Tip Amount</h2>
+				<span>/ person</span>
+				<input class="text-2xl bg-blue-400" id="totalTipAmount" readonly placeholder="$0.00" type="text">
+			</div>
+		
+			<div>
+				<h2 class="text-2xl">Total</h2>
+				<span>/ person</span>
+				<input class="text-2xl bg-blue-400" id="totalAmount" readonly placeholder="$0.00" type="text" >
+			</div>
+		
+			<button class="w-32 p-2 inline-block bg-blue-800 text-white rounded-lg mt-4" id="reset">Reset</button>
+		</section>
 	</div>
-	<input id="numOfPpl" type="number" pattern="[0-9]" placeholder="0">
-</div>
-
-<div>
-  <h2>Tip Amount</h2>
-  <span>/ person</span>
-	<input id="totalTipAmount" readonly placeholder="$0.00" type="text">
-</div>
-
-<div>
-  <h2>Total</h2>
-  <span>/ person</span>
-	<input id="totalAmount" readonly placeholder="$0.00" type="text" >
-</div>
-
-  <button id="reset">Reset</button>
+	
+	</div>
 
 	<footer>
 		<div class="attribution">
